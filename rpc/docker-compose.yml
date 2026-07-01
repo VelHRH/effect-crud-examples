@@ -1,11 +1,11 @@
 services:
   database:
-    container_name: entasis-database
+    container_name: my-database
     image: postgres:16-alpine
     env_file:
       - .env
     environment:
-      POSTGRES_DB: entasis
+      POSTGRES_DB: my-db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
     ports:

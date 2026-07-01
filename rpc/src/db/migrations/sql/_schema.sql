@@ -1,4 +1,4 @@
-\restrict GkMqcr8e4vK3KF508ZsqoRVpkL4MrM9sRle6dqEcEwE9K6n2wuyTXKvBLvCDlsZ
+\restrict mQL4bxwQDyyaSJ3SBIjdlAfwuhxToIL1VJOgh7ujXFGqK0lM1DuWNaBm53mykma
 
 CREATE FUNCTION public.set_updated_at() RETURNS trigger
     LANGUAGE plpgsql
@@ -31,10 +31,10 @@ ALTER TABLE ONLY public.rooms
 
 CREATE TRIGGER rooms_set_updated_at BEFORE UPDATE ON public.rooms FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
 
-\unrestrict GkMqcr8e4vK3KF508ZsqoRVpkL4MrM9sRle6dqEcEwE9K6n2wuyTXKvBLvCDlsZ
+\unrestrict mQL4bxwQDyyaSJ3SBIjdlAfwuhxToIL1VJOgh7ujXFGqK0lM1DuWNaBm53mykma
 
-\restrict u5cRMjZAjaEKYiZ6wEUV6JUeis7ZboTyMtX86qV0uyUzkEBO0ulYYCOJv1HIAja
+\restrict CLO94VmdOtgpKoy5LS0cngi9KAdGwPYhZ8nuXcNMHiEqnpFJpUfAdXdmDkUdSaz
 
-INSERT INTO public.effect_sql_migrations (migration_id, created_at, name) VALUES (1, '2026-06-23 19:52:12.150441+00', 'create_rooms_table');
+INSERT INTO public.effect_sql_migrations (migration_id, created_at, name) VALUES (1, '2026-07-01 09:35:47.177011+00', 'create_rooms_table');
 
-\unrestrict u5cRMjZAjaEKYiZ6wEUV6JUeis7ZboTyMtX86qV0uyUzkEBO0ulYYCOJv1HIAja
+\unrestrict CLO94VmdOtgpKoy5LS0cngi9KAdGwPYhZ8nuXcNMHiEqnpFJpUfAdXdmDkUdSaz
